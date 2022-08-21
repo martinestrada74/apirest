@@ -263,3 +263,26 @@ Stack trace:
 [21-Aug-2022 19:34:51 Europe/Berlin] PHP Warning:  Undefined variable $table in C:\xampp\htdocs\apirest\routes\services\post.php on line 15
 [21-Aug-2022 20:09:14 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 5 in C:\xampp\htdocs\apirest\controllers\post.controller.php on line 16
 [21-Aug-2022 20:09:44 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 5 in C:\xampp\htdocs\apirest\models\post.model.php on line 17
+[21-Aug-2022 23:14:25 Europe/Berlin] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in C:\xampp\htdocs\apirest\routes\services\put.php on line 3
+[21-Aug-2022 23:44:37 Europe/Berlin] PHP Warning:  require_once(controllers/put.controller.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\apirest\routes\services\put.php on line 4
+[21-Aug-2022 23:44:37 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'controllers/put.controller.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\apirest\routes\services\put.php:4
+Stack trace:
+#0 C:\xampp\htdocs\apirest\routes\routes.php(47): include()
+#1 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\apirest\routes\services\put.php on line 4
+[21-Aug-2022 23:45:25 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method PuttController::puttData() in C:\xampp\htdocs\apirest\routes\services\put.php:47
+Stack trace:
+#0 C:\xampp\htdocs\apirest\routes\routes.php(47): include()
+#1 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\apirest\routes\services\put.php on line 47
+[21-Aug-2022 23:45:49 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PutController" not found in C:\xampp\htdocs\apirest\routes\services\put.php:46
+Stack trace:
+#0 C:\xampp\htdocs\apirest\routes\routes.php(47): include()
+#1 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\apirest\routes\services\put.php on line 46
