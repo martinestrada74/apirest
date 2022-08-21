@@ -114,9 +114,10 @@ class GetController{
                 );
             }
         else{
-            $json = array(
+            $json = array(S
                 'status' => '404',
-                'result' => 'Not Found'
+                'result' => 'Not Found',
+                'method' => 'post'
 
             );
         }

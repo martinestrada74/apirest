@@ -10,8 +10,47 @@ class PostModel{
 
     static public function postData($table, $data){
 
-        print_r($table);
-        print_r($data);
+        
+        $columns = "";
+        $params = "";
+
+        foreach($data as $key => $value){
+
+            $columns .= $key.",";
+            $params .= ":".$key.",";
+
+        }
+
+        $columns = substr($columns, 0, -1);
+        $params = substr($params, 0, -1);
+
+        //print_r($columns);
+        //print_r($params);
+
+
+        $sql = "INSERT INTO $table ($columns) VALUES ($params)";
+
+        $link = Connection::connect();
+        $stmt = $link->prepare($sql);
+
+        foreach ($data as $key => $value){
+
+            $stmt->bindParam(":".$key, $data[$key], PDO::PARAM_STR);
+
+        }  
+        
+        //print_r($stmt);
+
+        if($stmt->execute()){
+            $response = array(
+                "lastId" => $link->lastInsertId(),
+                "comment" => "The process was successful"
+            );
+            return $response;
+        }  
+
+        else{
+            return $link->errorInfo();
+        }
     }
-    
 }
