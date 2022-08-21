@@ -23,7 +23,8 @@ if(count($routesArray)==0)
 //Cuando se hace una petición a la API
 
 if(count($routesArray)==1 && isset($_SERVER['REQUEST_METHOD'])){
-    //print_r($_SERVER['REQUEST_METHOD']);
+    
+    $table = explode ("?", $routesArray[1])[0];
 
     //Solicitud GET
 
@@ -37,6 +38,7 @@ if(count($routesArray)==1 && isset($_SERVER['REQUEST_METHOD'])){
     if($_SERVER['REQUEST_METHOD']=="POST"){
 
         include "services/post.php";
+    }    
 
     //Solicitud PUT
 

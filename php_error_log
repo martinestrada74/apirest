@@ -258,3 +258,8 @@ Stack trace:
 #3 {main}
   thrown in C:\xampp\htdocs\apirest\routes\services\get.php on line 72
 [21-Aug-2022 09:58:04 Europe/Berlin] PHP Warning:  Undefined variable $table in C:\xampp\htdocs\apirest\models\get.model.php on line 696
+[21-Aug-2022 18:46:23 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 25 in C:\xampp\htdocs\apirest\routes\routes.php on line 67
+[21-Aug-2022 18:46:40 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 25 in C:\xampp\htdocs\apirest\routes\routes.php on line 67
+[21-Aug-2022 19:34:51 Europe/Berlin] PHP Warning:  Undefined variable $table in C:\xampp\htdocs\apirest\routes\services\post.php on line 15
+[21-Aug-2022 20:09:14 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 5 in C:\xampp\htdocs\apirest\controllers\post.controller.php on line 16
+[21-Aug-2022 20:09:44 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 5 in C:\xampp\htdocs\apirest\models\post.model.php on line 17
