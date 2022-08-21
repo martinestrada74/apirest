@@ -1,0 +1,260 @@
+[18-Aug-2022 05:22:23 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'products.id_price_product' in 'on clause' in C:\xampp\htdocs\apirest\models\get.model.php:261
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(261): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(48): GetModel::getRelDataFilter('products, price...', 'product,price', 'name_product,va...', 'pharm_form_prod...', 'TABLETA', 'value_price', 'DESC', NULL, NULL)
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(40): GetController::getRelDataFilter('products, price...', 'product,price', 'name_product,va...', 'pharm_form_prod...', 'TABLETA', 'value_price', 'DESC', NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\get.model.php on line 261
+[18-Aug-2022 05:33:41 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pos.relations' doesn't exist in C:\xampp\htdocs\apirest\models\get.model.php:332
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(332): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(60): GetModel::getDataSearch('relations', '*', 'name_product,sa...', 'dina_capsula', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(50): GetController::getDataSearch('relations', '*', 'name_product,sa...', 'dina_capsula', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\get.model.php on line 332
+[18-Aug-2022 05:34:48 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pos.relations' doesn't exist in C:\xampp\htdocs\apirest\models\get.model.php:332
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(332): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(60): GetModel::getDataSearch('relations', '*', 'name_product,sa...', 'dina_capsula', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(50): GetController::getDataSearch('relations', '*', 'name_product,sa...', 'dina_capsula', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\get.model.php on line 332
+[18-Aug-2022 05:40:27 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pos.price' doesn't exist in C:\xampp\htdocs\apirest\models\get.model.php:422
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(422): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(72): GetModel::getRelDataSearch('price,products', 'price,product', '*', 'name_product,sa...', 'dina_capsula', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(60): GetController::getRelDataSearch('price,products', 'price,product', '*', 'name_product,sa...', 'dina_capsula', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\get.model.php on line 422
+[19-Aug-2022 04:33:28 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'date_created_product' in 'where clause' in C:\xampp\htdocs\apirest\models\get.model.php:470
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(470): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(84): GetModel::getRelDataRange('products', '*', 'date_created_pr...', true, true, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(70): GetController::getRelDataRange('products', '*', 'date_created_pr...', true, true, NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\get.model.php on line 470
+[19-Aug-2022 05:15:08 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method GetModel::getDateRange() in C:\xampp\htdocs\apirest\controllers\get.controller.php:84
+Stack trace:
+#0 C:\xampp\htdocs\apirest\routes\services\get.php(70): GetController::getDateRange('products', '*', 'date_created_pr...', true, true, NULL, NULL, NULL, NULL)
+#1 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\apirest\controllers\get.controller.php on line 84
+[19-Aug-2022 05:17:50 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "}" in C:\xampp\htdocs\apirest\routes\services\get.php on line 74
+[19-Aug-2022 05:58:36 Europe/Berlin] PHP Parse error:  syntax error, unexpected variable "$inTo" in C:\xampp\htdocs\apirest\models\get.model.php on line 442
+[19-Aug-2022 05:59:56 Europe/Berlin] PHP Warning:  Undefined variable $filterTo in C:\xampp\htdocs\apirest\controllers\get.controller.php on line 84
+[19-Aug-2022 05:59:56 Europe/Berlin] PHP Warning:  Undefined variable $inTo in C:\xampp\htdocs\apirest\controllers\get.controller.php on line 84
+[19-Aug-2022 17:58:59 Europe/Berlin] PHP Parse error:  syntax error, unexpected token ",", expecting variable in C:\xampp\htdocs\apirest\models\get.model.php on line 487
+[19-Aug-2022 17:59:51 Europe/Berlin] PHP Parse error:  syntax error, unexpected token "else", expecting "function" or "const" in C:\xampp\htdocs\apirest\models\get.model.php on line 549
+[19-Aug-2022 18:01:08 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pos.relations' doesn't exist in C:\xampp\htdocs\apirest\models\get.model.php:478
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(478): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(84): GetModel::getDateRange('relations', '*', 'date_created_pr...', '2022-02-04', '2022-02-10', NULL, NULL, NULL, NULL, 'id_product', '4,5')
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(72): GetController::getDateRange('relations', '*', 'date_created_pr...', '2022-02-04', '2022-02-10', NULL, NULL, NULL, NULL, 'id_product', '4,5')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\get.model.php on line 478
+[19-Aug-2022 18:04:07 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pos.relations' doesn't exist in C:\xampp\htdocs\apirest\models\get.model.php:478
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(478): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(84): GetModel::getDateRange('relations', '*', 'date_created_pr...', '2022-02-04', '2022-02-10', NULL, NULL, NULL, NULL, 'id_product', '4,5')
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(72): GetController::getDateRange('relations', '*', 'date_created_pr...', '2022-02-04', '2022-02-10', NULL, NULL, NULL, NULL, 'id_product', '4,5')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\get.model.php on line 478
+[19-Aug-2022 18:07:21 Europe/Berlin] PHP Warning:  Undefined variable $table in C:\xampp\htdocs\apirest\models\get.model.php on line 514
+[19-Aug-2022 18:07:21 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'INNER JOIN products ON prices.id_product_price = products.id_product  WHERE d...' at line 1 in C:\xampp\htdocs\apirest\models\get.model.php:542
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(542): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(96): GetModel::getRelDateRange('prices,products', 'price,product', '*', 'date_created_pr...', '2022-02-04', '2022-02-10', NULL, NULL, NULL, NULL, 'id_product', '4,5')
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(82): GetController::getRelDateRange('prices,products', 'price,product', '*', 'date_created_pr...', '2022-02-04', '2022-02-10', NULL, NULL, NULL, NULL, 'id_product', '4,5')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\get.model.php on line 542
+[19-Aug-2022 18:18:49 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'pos.productss' doesn't exist in C:\xampp\htdocs\apirest\models\get.model.php:45
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(45): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(12): GetModel::getData('productss', 'id_product,name...', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(92): GetController::getData('productss', 'id_product,name...', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\get.model.php on line 45
+[21-Aug-2022 06:22:14 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'information_schema.columns WHERE table_schema = 'pos' AND table_name = 'produ...' at line 1 in C:\xampp\htdocs\apirest\models\connection.php:53
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\connection.php(53): PDO->query('SELECT COLUMN_N...')
+#1 C:\xampp\htdocs\apirest\models\get.model.php(13): Connection::getColumnsData('productss')
+#2 C:\xampp\htdocs\apirest\controllers\get.controller.php(12): GetModel::getData('productss', 'id_product,name...', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\services\get.php(92): GetController::getData('productss', 'id_product,name...', NULL, NULL, NULL, NULL)
+#4 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#7 {main}
+  thrown in C:\xampp\htdocs\apirest\models\connection.php on line 53
+[21-Aug-2022 06:24:25 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.columns WHERE table_schema = 'pos' AND table_name = 'productss'' at line 1 in C:\xampp\htdocs\apirest\models\connection.php:53
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\connection.php(53): PDO->query('SELECT COLUMN_N...')
+#1 C:\xampp\htdocs\apirest\models\get.model.php(13): Connection::getColumnsData('productss')
+#2 C:\xampp\htdocs\apirest\controllers\get.controller.php(12): GetModel::getData('productss', 'id_product,name...', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\services\get.php(92): GetController::getData('productss', 'id_product,name...', NULL, NULL, NULL, NULL)
+#4 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#7 {main}
+  thrown in C:\xampp\htdocs\apirest\models\connection.php on line 53
+[21-Aug-2022 06:48:31 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name_productt' in 'field list' in C:\xampp\htdocs\apirest\models\get.model.php:54
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(54): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(12): GetModel::getData('products', 'id_product,name...', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(92): GetController::getData('products', 'id_product,name...', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\get.model.php on line 54
+[21-Aug-2022 06:50:07 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name_productt' in 'field list' in C:\xampp\htdocs\apirest\models\get.model.php:54
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(54): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(12): GetModel::getData('products', 'id_product,name...', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(92): GetController::getData('products', 'id_product,name...', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\get.model.php on line 54
+[21-Aug-2022 06:51:24 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name_productt' in 'field list' in C:\xampp\htdocs\apirest\models\get.model.php:54
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(54): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(12): GetModel::getData('products', 'id_product,name...', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(92): GetController::getData('products', 'id_product,name...', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\get.model.php on line 54
+[21-Aug-2022 06:59:37 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 3 in C:\xampp\htdocs\apirest\models\connection.php on line 67
+[21-Aug-2022 07:10:51 Europe/Berlin] PHP Parse error:  Unclosed '{' on line 3 in C:\xampp\htdocs\apirest\models\connection.php on line 67
+[21-Aug-2022 07:11:54 Europe/Berlin] PHP Warning:  Undefined variable $selecArray in C:\xampp\htdocs\apirest\models\get.model.php on line 20
+[21-Aug-2022 07:15:37 Europe/Berlin] PHP Warning:  Undefined variable $selecArray in C:\xampp\htdocs\apirest\models\get.model.php on line 20
+[21-Aug-2022 07:23:28 Europe/Berlin] PHP Warning:  Undefined variable $item in C:\xampp\htdocs\apirest\models\connection.php on line 61
+[21-Aug-2022 07:23:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$ in C:\xampp\htdocs\apirest\models\connection.php on line 61
+[21-Aug-2022 07:23:28 Europe/Berlin] PHP Warning:  Undefined variable $item in C:\xampp\htdocs\apirest\models\connection.php on line 61
+[21-Aug-2022 07:23:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$ in C:\xampp\htdocs\apirest\models\connection.php on line 61
+[21-Aug-2022 07:23:28 Europe/Berlin] PHP Warning:  Undefined variable $item in C:\xampp\htdocs\apirest\models\connection.php on line 61
+[21-Aug-2022 07:23:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$ in C:\xampp\htdocs\apirest\models\connection.php on line 61
+[21-Aug-2022 07:23:28 Europe/Berlin] PHP Warning:  Undefined variable $item in C:\xampp\htdocs\apirest\models\connection.php on line 61
+[21-Aug-2022 07:23:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$ in C:\xampp\htdocs\apirest\models\connection.php on line 61
+[21-Aug-2022 07:23:28 Europe/Berlin] PHP Warning:  Undefined variable $item in C:\xampp\htdocs\apirest\models\connection.php on line 61
+[21-Aug-2022 07:23:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$ in C:\xampp\htdocs\apirest\models\connection.php on line 61
+[21-Aug-2022 07:23:28 Europe/Berlin] PHP Warning:  Undefined variable $item in C:\xampp\htdocs\apirest\models\connection.php on line 61
+[21-Aug-2022 07:23:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$ in C:\xampp\htdocs\apirest\models\connection.php on line 61
+[21-Aug-2022 07:23:28 Europe/Berlin] PHP Warning:  Undefined variable $item in C:\xampp\htdocs\apirest\models\connection.php on line 61
+[21-Aug-2022 07:23:28 Europe/Berlin] PHP Warning:  Undefined property: stdClass::$ in C:\xampp\htdocs\apirest\models\connection.php on line 61
+[21-Aug-2022 07:37:23 Europe/Berlin] PHP Warning:  Undefined variable $selecArray in C:\xampp\htdocs\apirest\models\get.model.php on line 21
+[21-Aug-2022 07:37:23 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in C:\xampp\htdocs\apirest\models\connection.php:65
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\connection.php(65): in_array('id_product', NULL)
+#1 C:\xampp\htdocs\apirest\models\get.model.php(21): Connection::getColumnsData('products', NULL)
+#2 C:\xampp\htdocs\apirest\controllers\get.controller.php(12): GetModel::getData('products', 'id_product,name...', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\services\get.php(92): GetController::getData('products', 'id_product,name...', NULL, NULL, NULL, NULL)
+#4 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#7 {main}
+  thrown in C:\xampp\htdocs\apirest\models\connection.php on line 65
+[21-Aug-2022 07:50:06 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\apirest\models\get.model.php:76
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(76): array_push(NULL, 'pharm_form_prod...')
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(24): GetModel::getDataFilter('products', 'id_product,name...', 'pharm_form_prod...', 'TABLETA', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(24): GetController::getDataFilter('products', 'id_product,name...', 'pharm_form_prod...', 'TABLETA', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\get.model.php on line 76
+[21-Aug-2022 07:51:08 Europe/Berlin] PHP Warning:  Undefined variable $searchArray in C:\xampp\htdocs\apirest\models\get.model.php on line 80
+[21-Aug-2022 08:24:41 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Connection::getColumnsData(), 1 passed in C:\xampp\htdocs\apirest\models\get.model.php on line 163 and exactly 2 expected in C:\xampp\htdocs\apirest\models\connection.php:48
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(163): Connection::getColumnsData('prices')
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(36): GetModel::getRelData('prices,products', 'price,product', 'name_product,va...', 'value_price', 'DESC', NULL, NULL)
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(33): GetController::getRelData('prices,products', 'price,product', 'name_product,va...', 'value_price', 'DESC', NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\connection.php on line 48
+[21-Aug-2022 08:53:31 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'value_pric' in 'field list' in C:\xampp\htdocs\apirest\models\get.model.php:213
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(213): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(36): GetModel::getRelData('prices,products', 'price,product', 'name_product,va...', 'value_price', 'DESC', NULL, NULL)
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(33): GetController::getRelData('prices,products', 'price,product', 'name_product,va...', 'value_price', 'DESC', NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\get.model.php on line 213
+[21-Aug-2022 09:20:23 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Connection::getColumnsData(), 1 passed in C:\xampp\htdocs\apirest\models\get.model.php on line 472 and exactly 2 expected in C:\xampp\htdocs\apirest\models\connection.php:48
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(472): Connection::getColumnsData('value_price')
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(72): GetModel::getRelDataSearch('prices,products', 'price,product', 'value_price,nam...', 'value_price,id_...', '6500_1', NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(62): GetController::getRelDataSearch('prices,products', 'price,product', 'value_price,nam...', 'value_price,id_...', '6500_1', NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\connection.php on line 48
+[21-Aug-2022 09:32:08 Europe/Berlin] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function Connection::getColumnsData(), 1 passed in C:\xampp\htdocs\apirest\models\get.model.php on line 584 and exactly 2 expected in C:\xampp\htdocs\apirest\models\connection.php:48
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\get.model.php(584): Connection::getColumnsData('products')
+#1 C:\xampp\htdocs\apirest\controllers\get.controller.php(84): GetModel::getDateRange('products', '*', 'date_created_pr...', '2022-02-04', '2022-02-10', NULL, NULL, NULL, NULL, NULL, NULL)
+#2 C:\xampp\htdocs\apirest\routes\services\get.php(72): GetController::getDateRange('products', '*', 'date_created_pr...', '2022-02-04', '2022-02-10', NULL, NULL, NULL, NULL, NULL, NULL)
+#3 C:\xampp\htdocs\apirest\routes\routes.php(32): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\connection.php on line 48
+[21-Aug-2022 09:34:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method GetController::getDateRange() in C:\xampp\htdocs\apirest\routes\services\get.php:72
+Stack trace:
+#0 C:\xampp\htdocs\apirest\routes\routes.php(32): include()
+#1 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\apirest\routes\services\get.php on line 72
+[21-Aug-2022 09:42:46 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method GetController::getDateRange() in C:\xampp\htdocs\apirest\routes\services\get.php:72
+Stack trace:
+#0 C:\xampp\htdocs\apirest\routes\routes.php(32): include()
+#1 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\apirest\routes\services\get.php on line 72
+[21-Aug-2022 09:42:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined method GetController::getDateRange() in C:\xampp\htdocs\apirest\routes\services\get.php:72
+Stack trace:
+#0 C:\xampp\htdocs\apirest\routes\routes.php(32): include()
+#1 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#3 {main}
+  thrown in C:\xampp\htdocs\apirest\routes\services\get.php on line 72
+[21-Aug-2022 09:58:04 Europe/Berlin] PHP Warning:  Undefined variable $table in C:\xampp\htdocs\apirest\models\get.model.php on line 696
