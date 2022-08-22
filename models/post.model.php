@@ -22,10 +22,7 @@ class PostModel{
         }
 
         $columns = substr($columns, 0, -1);
-        $params = substr($params, 0, -1);
-
-        //print_r($columns);
-        //print_r($params);
+        $params = substr($params, 0, -1);        
 
 
         $sql = "INSERT INTO $table ($columns) VALUES ($params)";
@@ -36,7 +33,6 @@ class PostModel{
         foreach ($data as $key => $value){
 
             $stmt->bindParam(":".$key, $data[$key], PDO::PARAM_STR);
-
         }  
         
         //print_r($stmt);
