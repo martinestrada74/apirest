@@ -448,3 +448,16 @@ Stack trace:
 #5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
 #6 {main}
   thrown in C:\xampp\htdocs\apirest\models\put.model.php on line 35
+[22-Aug-2022 04:32:12 Europe/Berlin] PHP Warning:  Undefined variable $set in C:\xampp\htdocs\apirest\models\delete.model.php on line 34
+[22-Aug-2022 04:32:12 Europe/Berlin] PHP Warning:  Undefined variable $data in C:\xampp\htdocs\apirest\models\delete.model.php on line 39
+[22-Aug-2022 04:32:12 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, null given in C:\xampp\htdocs\apirest\models\delete.model.php on line 39
+[22-Aug-2022 04:32:12 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id_product = '18844'' at line 1 in C:\xampp\htdocs\apirest\models\delete.model.php:48
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\delete.model.php(48): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\delete.controller.php(13): DeleteModel::deleteData('products', '18844', 'id_product')
+#2 C:\xampp\htdocs\apirest\routes\services\delete.php(30): DeleteController::deleteData('products', '18844', 'id_product')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(54): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\delete.model.php on line 48
