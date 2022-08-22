@@ -438,3 +438,13 @@ Stack trace:
 #3 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
 #4 {main}
   thrown in C:\xampp\htdocs\apirest\controllers\put.controller.php on line 15
+[22-Aug-2022 03:34:09 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id_produc' in 'where clause' in C:\xampp\htdocs\apirest\models\put.model.php:35
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\put.model.php(35): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\put.controller.php(13): PutModel::putData('products', Array, '18899', 'id_produc')
+#2 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18899', 'id_produc')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\put.model.php on line 35

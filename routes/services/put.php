@@ -24,6 +24,10 @@ if(isset($_GET["id"]) && isset($_GET["nameId"])){
         array_push($columns,$value);
     }
 
+    array_push($columns,$_GET["nameId"]);
+
+    $columns = array_unique($columns);
+
     /*====================================================
     Validar la tabla y las columnas
     =====================================================*/

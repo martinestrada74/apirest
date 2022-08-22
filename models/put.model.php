@@ -1,6 +1,7 @@
 <?php
 
 require_once "connection.php";
+require_once "get.model.php";
 
 class PutModel{
 
@@ -9,6 +10,26 @@ class PutModel{
     =====================================================*/
 
     static public function putData($table, $data, $id, $nameId){
+
+        /*====================================================
+        Validar el id
+        =====================================================*/
+
+        $response = GetModel::getDataFilter($table, $nameId, $nameId, $id ,null,null,null,null);
+
+        if(empty($response)){
+
+            /*$response = array(
+                "comment" => "Error: The id was not found en the database"
+            );
+            return $response;*/
+
+            return null;
+        }
+
+        /*====================================================
+        Se actualiza registro
+        =====================================================*/
 
         $set = "";
 
