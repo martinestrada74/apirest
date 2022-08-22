@@ -286,3 +286,155 @@ Stack trace:
 #2 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
 #3 {main}
   thrown in C:\xampp\htdocs\apirest\routes\services\put.php on line 46
+[22-Aug-2022 02:52:52 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\apirest\models\put.model.php:38
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\put.model.php(38): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\put.controller.php(13): PutModel::putData('products', Array, '18844', 'id_product')
+#2 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\put.model.php on line 38
+[22-Aug-2022 02:53:48 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\apirest\models\put.model.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\put.model.php(33): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\put.controller.php(13): PutModel::putData('products', Array, '18844', 'id_product')
+#2 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\put.model.php on line 33
+[22-Aug-2022 02:57:33 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\apirest\models\put.model.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\put.model.php(33): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\put.controller.php(13): PutModel::putData('products', Array, '18844', 'id_product')
+#2 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\put.model.php on line 33
+[22-Aug-2022 03:01:16 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\apirest\models\put.model.php:35
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\put.model.php(35): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\put.controller.php(13): PutModel::putData('products', Array, '18844', 'id_product')
+#2 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\put.model.php on line 35
+[22-Aug-2022 03:03:04 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\apirest\models\put.model.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\put.model.php(33): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\put.controller.php(13): PutModel::putData('products', Array, '18844', 'id_product')
+#2 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\put.model.php on line 33
+[22-Aug-2022 03:05:17 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\apirest\models\put.model.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\put.model.php(33): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\put.controller.php(13): PutModel::putData('products', Array, '18844', 'id_product')
+#2 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\put.model.php on line 33
+[22-Aug-2022 03:07:27 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\apirest\models\put.model.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\put.model.php(33): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\put.controller.php(13): PutModel::putData('products', Array, '18844', 'id_product')
+#2 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\put.model.php on line 33
+[22-Aug-2022 03:14:38 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\apirest\models\put.model.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\put.model.php(33): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\put.controller.php(13): PutModel::putData('products', Array, '18844', 'id_product')
+#2 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\put.model.php on line 33
+[22-Aug-2022 03:14:46 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\apirest\models\put.model.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\put.model.php(33): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\put.controller.php(13): PutModel::putData('products', Array, '18844', 'id_product')
+#2 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\put.model.php on line 33
+[22-Aug-2022 03:14:52 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\apirest\models\put.model.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\put.model.php(33): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\put.controller.php(13): PutModel::putData('products', Array, '18844', 'id_product')
+#2 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\put.model.php on line 33
+[22-Aug-2022 03:16:10 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\apirest\models\put.model.php:33
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\put.model.php(33): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\put.controller.php(13): PutModel::putData('products', Array, '18844', 'id_product')
+#2 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\put.model.php on line 33
+[22-Aug-2022 03:17:00 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PuttController" not found in C:\xampp\htdocs\apirest\controllers\put.controller.php:15
+Stack trace:
+#0 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#1 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\apirest\controllers\put.controller.php on line 15
+[22-Aug-2022 03:18:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PuttController" not found in C:\xampp\htdocs\apirest\controllers\put.controller.php:15
+Stack trace:
+#0 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#1 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\apirest\controllers\put.controller.php on line 15
+[22-Aug-2022 03:19:12 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PuttController" not found in C:\xampp\htdocs\apirest\controllers\put.controller.php:15
+Stack trace:
+#0 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#1 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\apirest\controllers\put.controller.php on line 15
+[22-Aug-2022 03:19:38 Europe/Berlin] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in C:\xampp\htdocs\apirest\models\put.model.php:35
+Stack trace:
+#0 C:\xampp\htdocs\apirest\models\put.model.php(35): PDOStatement->execute()
+#1 C:\xampp\htdocs\apirest\controllers\put.controller.php(13): PutModel::putData('products', Array, '18844', 'id_product')
+#2 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#3 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#6 {main}
+  thrown in C:\xampp\htdocs\apirest\models\put.model.php on line 35
+[22-Aug-2022 03:23:01 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "PuttController" not found in C:\xampp\htdocs\apirest\controllers\put.controller.php:15
+Stack trace:
+#0 C:\xampp\htdocs\apirest\routes\services\put.php(47): PutController::putData('products', Array, '18844', 'id_product')
+#1 C:\xampp\htdocs\apirest\routes\routes.php(47): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\apirest\controllers\routes.controller.php(9): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
+#4 {main}
+  thrown in C:\xampp\htdocs\apirest\controllers\put.controller.php on line 15

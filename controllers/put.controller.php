@@ -11,9 +11,8 @@ class PutController{
     static public function putData($table, $data, $id, $nameId){
         
         $response = PutModel::putData($table, $data, $id, $nameId);
-        print_r($response);return;
 
-        $return = new PuttController();
+        $return = new PutController();
         $return->fncResponse($response);
     }
 
