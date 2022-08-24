@@ -461,3 +461,5 @@ Stack trace:
 #5 C:\xampp\htdocs\apirest\index.php(18): RoutesController->index()
 #6 {main}
   thrown in C:\xampp\htdocs\apirest\models\delete.model.php on line 48
+[24-Aug-2022 03:20:51 Europe/Berlin] PHP Parse error:  syntax error, unexpected identifier "print_r" in C:\xampp\htdocs\apirest\controllers\post.controller.php on line 31
+[24-Aug-2022 03:21:24 Europe/Berlin] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in C:\xampp\htdocs\apirest\controllers\post.controller.php on line 25

@@ -17,6 +17,27 @@ class PostController{
     }
 
     /*====================================================
+    Peticiones POST para registrar usuario
+    =====================================================*/
+
+    static public function postRegister($table, $data, $suffix){
+
+        if(isset($data["password_".$suffix]) && $data["password_".$suffix] != null){
+
+            $crypt = crypt($data["password_".$suffix],'$2a$07$feypatriabesotunombre$');
+
+            $data["password_".$suffix] = $crypt;
+
+            $response = PostModel::postData($table, $data);
+
+            $return = new PostController();
+            $return->fncResponse($response);
+
+        }
+    }
+
+
+    /*====================================================
     Respuestas del controlador
     =====================================================*/
 
